@@ -1,47 +1,45 @@
-require(`dotenv`).config({
-  path: `.env`
-});
+const siteMetadata = require("./config")
+const tailwindConfig = require("./tailwind.config")
+const autoprefixer = require("autoprefixer")
+const tailwindcss = require("tailwindcss")
+
+const plugins = [
+  `gatsby-plugin-react-helmet`,
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `images`,
+      path: `${__dirname}/src/images`
+    }
+  },
+  `gatsby-transformer-sharp`,
+  `gatsby-plugin-sharp`,
+  {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: `SanjithPK`,
+      short_name: `Sanjith`,
+      start_url: `/`,
+      background_color: `#663399`,
+      theme_color: `#663399`,
+      display: `minimal-ui`,
+      icon: `src/images/logo.png`
+    }
+  },
+  `gatsby-plugin-offline`,
+  {
+    resolve: `gatsby-plugin-postcss`,
+    options: {
+      postCssPlugins: [
+        tailwindcss(tailwindConfig),
+        autoprefixer,
+        ...(process.env.NODE_ENV === `production` ? [require(`cssnano`)] : [])
+      ]
+    }
+  }
+]
 
 module.exports = {
-  siteMetadata: {
-    siteTitleAlt: `Sanjith PK`
-  },
-  plugins: [
-    {
-      resolve: `@lekoarts/gatsby-theme-cara`,
-      options: {}
-    },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID
-      }
-    },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Cara - @lekoarts/gatsby-theme-cara`,
-        short_name: `Cara`,
-        description: `Playful and Colorful One-Page portfolio featuring Parallax effects and animations`,
-        start_url: `/`,
-        background_color: `#141821`,
-        theme_color: `#f6ad55`,
-        display: `standalone`,
-        icons: [
-          {
-            src: `/android-chrome-192x192.png`,
-            sizes: `192x192`,
-            type: `image/png`
-          },
-          {
-            src: `/android-chrome-512x512.png`,
-            sizes: `512x512`,
-            type: `image/png`
-          }
-        ]
-      }
-    },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-netlify`
-  ]
-};
+  siteMetadata: siteMetadata,
+  plugins: plugins
+}
