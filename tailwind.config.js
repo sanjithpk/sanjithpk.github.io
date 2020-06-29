@@ -37,7 +37,7 @@ module.exports = {
       bgalt: "#f5f5f5",
       "color-default": "#333",
       "color-1": "#8e24aa",
-      "color-2": "#673ab7",
+      "color-2": "#05a",
       "color-3": "#aeb4c5",
       primary: "#f55555",
       secondary: "#6888df",

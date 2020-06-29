@@ -4,7 +4,10 @@ module.exports = {
   siteKeywords: "Sanjith PK, Sanjith, sanjithpk, developer, javascript",
   siteUrl: "https://sanjith.me",
   name: "Sanjith PK",
+  logo: "/icons/icon-144x144.png",
   author: "@sanjithpk",
+  darkmode: true,
+  switchTheme: true,
   socialMedia: [
     {
       name: "GitHub",

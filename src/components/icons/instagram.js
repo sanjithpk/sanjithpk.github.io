@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react"
 
-const IconInstagram = () => (
+const InstagramIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 512 512">
     <title>Instagram</title>
     <g>
@@ -19,6 +19,6 @@ const IconInstagram = () => (
       </g>
     </g>
   </svg>
-);
+)
 
-export default IconInstagram;
+export default InstagramIcon
