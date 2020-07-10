@@ -22,9 +22,6 @@ module.exports = {
       primary: [theme("colors.primary"), theme("colors.secondary")]
     }),
     themes: {
-      fontFamily: {
-        sans: ["IBM Plex Sans", ...defaultTheme.fontFamily.sans]
-      },
       dark: {
         bg: "#111",
         bgalt: "#000",

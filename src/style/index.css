@@ -343,3 +343,39 @@ gatsby-highlight > code[class*="language-"],
   width: calc(1.2em - 4px);
   left: -2px;
 }
+
+.bg-gradient-1 {
+  background: linear-gradient(
+    225deg,
+    var(--theme-ui-colors-orange-3, #fbd38d),
+    var(--theme-ui-colors-orange-5, #ed8936)
+  );
+}
+
+.bg-gradient-2 {
+  background: linear-gradient(
+    45deg,
+    var(--theme-ui-colors-indigo-3, #a3bffa),
+    var(--theme-ui-colors-indigo-5, #667eea)
+  );
+}
+
+.bg-gradient-3 {
+  background: linear-gradient(
+    135deg,
+    var(--theme-ui-colors-pink-4, #f687b3),
+    var(--theme-ui-colors-pink-6, #d53f8c)
+  );
+}
+
+.bg-gradient-4 {
+  background: linear-gradient(
+    225deg,
+    var(--theme-ui-colors-green-3, #9ae6b4),
+    var(--theme-ui-colors-green-5, #48bb78)
+  );
+}
+
+.bg-donut-1 {
+  border: 30px solid #9f7aea;
+}

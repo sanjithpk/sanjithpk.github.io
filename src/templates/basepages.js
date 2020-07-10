@@ -14,7 +14,7 @@ export default function basePages({ data, location }) {
       }}
       location={location}
     >
-      <div className="boxed">
+      <div className="boxed min-h-screen">
         <div className="title py-12 text-center">
           <h2 className="font-black text-5xl text-color-1">
             {data.mdx.frontmatter.title}
