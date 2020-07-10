@@ -1,6 +1,6 @@
 import React from "react"
 
-const MenuIcon = () => (
+const ChevronLeft = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={24}
@@ -8,15 +8,13 @@ const MenuIcon = () => (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    strokeWidth={4}
+    strokeWidth={2}
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="feather feather-menu"
+    className="feather feather-chevron-left"
   >
-    <line x1={3} y1={7} x2={24} y2={7} />
-    <line x1={3} y1={14} x2={18} y2={14} />
-    <line x1={3} y1={21} x2={14} y2={21} />
+    <polyline points="15 18 9 12 15 6" />
   </svg>
 )
 
-export default MenuIcon
+export default ChevronLeft

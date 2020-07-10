@@ -2,10 +2,6 @@
 @import "tailwindcss/utilities";
 @import "tailwindcss/components";
 
-body {
-  font-family: "Montserrat", sans-serif;
-}
-
 p {
   line-height: 165%;
 }
@@ -36,21 +32,6 @@ p {
 
 .nav .nav-links li a {
   @apply inline-block p-1 relative z-10;
-}
-
-.nav .nav-links li:before {
-  content: "";
-  @apply absolute w-0 h-0 rounded-full bg-primary left-0 right-0 bottom-0 top-0 m-auto opacity-25;
-  transition: width 0.25s, height 0.25s;
-}
-
-.nav .nav-links li.active:before,
-.nav .nav-links li:hover:before {
-  @apply w-8 h-8;
-}
-
-.nav .nav-links .theme-switcher:before {
-  display: none;
 }
 
 .nav .line {
@@ -105,6 +86,15 @@ p {
   @apply relative z-10;
 }
 
+.btn:before {
+  content: "";
+  @apply absolute w-full h-full top-0;
+  left: 100%;
+  transition: left 0.25s;
+  transition-timing-function: cubic-bezier(1, 2.13, 1, -0.1);
+  z-index: 1;
+}
+
 .btn .icon-right {
   @apply ml-3;
 }
@@ -118,17 +108,11 @@ p {
 }
 
 .btn-primary {
-  @apply bg-primary my-4;
-  color: #fff;
+  @apply bg-transparent border border-primary my-4 rounded;
 }
 
-.btn-primary:before {
-  @apply bg-secondary;
-}
-
-.btn-primary:hover:before,
-.btn-primary:focus:before {
-  left: 0;
+.btn-primary:hover {
+  @apply bg-primary;
 }
 
 .portfolio-item .image {
@@ -299,4 +283,63 @@ h6 {
   html {
     font-size: 15px;
   }
+}
+
+.prism-code {
+  font-size: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+  background-color: transparent;
+  overflow: initial;
+}
+
+.token {
+  display: inline-block;
+}
+
+p > code,
+li > code {
+  background: rgb(1, 22, 39);
+  color: rgb(214, 222, 235);
+  padding: 0.4em 0.3rem;
+}
+
+.gatsby-highlight {
+  font-size: 1rem;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  overflow: auto;
+}
+
+gatsby-highlight > code[class*="language-"],
+.gatsby-highlight > pre[class*="language-"] {
+  word-spacing: normal;
+  word-break: normal;
+  overflow-wrap: normal;
+  line-height: 1.5;
+  tab-size: 4;
+  hyphens: none;
+}
+
+.line-number-style {
+  display: inline-block;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 1.2em;
+  user-select: none;
+  opacity: 0.3;
+  text-align: center;
+  position: relative;
+}
+
+.highlight-line {
+  background-color: rgb(2, 55, 81);
+  border-left: 4px solid rgb(2, 155, 206);
+}
+
+.highlight-line .line-number-style {
+  opacity: 0.5;
+  width: calc(1.2em - 4px);
+  left: -2px;
 }

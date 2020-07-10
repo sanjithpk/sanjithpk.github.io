@@ -40,7 +40,7 @@ const List = ({
       const next = i !== themes.length - 1 ? i + 1 : 0
       return (
         <button
-          className={`text-color-2 transition-transform duration-200 transform top-0 left-0 ${
+          className={`text-default transition-transform duration-200 transform top-0 left-0 ${
             i === currentTheme ? "scale-100" : "scale-0 absolute"
           }`}
           title={`Switch to ${themes[next].label}`}
@@ -67,7 +67,7 @@ const ListItem = ({ data, active, liClassName }) => {
       <Link
         to={data.url}
         title={data.name}
-        className="text-2xl lg:text-base text-color-2 focus:text-primary"
+        className="text-2xl lg:text-base uppercase text-default focus:text-primary"
       >
         <span>{data.name}</span>
       </Link>

@@ -3,15 +3,16 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, lang, meta, title, image }) {
   const { site } = useStaticQuery(
     graphql`
-      query {
+      query SeoQuery {
         site {
           siteMetadata {
             title
             description
             author
+            ogImage
           }
         }
       }
@@ -19,6 +20,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const ogImage = image || site.siteMetadata.ogImage
 
   return (
     <Helmet
@@ -26,7 +28,11 @@ function SEO({ description, lang, meta, title }) {
         lang
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={
+        title === site.siteMetadata.title
+          ? title
+          : `%s | ${site.siteMetadata.title}`
+      }
       meta={[
         {
           name: `description`,
@@ -59,6 +65,10 @@ function SEO({ description, lang, meta, title }) {
         {
           name: `twitter:description`,
           content: metaDescription
+        },
+        {
+          property: `og:image`,
+          content: ogImage
         }
       ].concat(meta)}
     />

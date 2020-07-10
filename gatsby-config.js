@@ -8,8 +8,22 @@ const plugins = [
   {
     resolve: `gatsby-source-filesystem`,
     options: {
-      name: `images`,
-      path: `${__dirname}/src/images`
+      name: `assets`,
+      path: `${__dirname}/src/assets`
+    }
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `blog`,
+      path: `${__dirname}/content/blog/`
+    }
+  },
+  {
+    resolve: `gatsby-source-filesystem`,
+    options: {
+      name: `basepages`,
+      path: `${__dirname}/content/basepages`
     }
   },
   `gatsby-transformer-sharp`,
@@ -23,10 +37,23 @@ const plugins = [
       background_color: `#663399`,
       theme_color: `#663399`,
       display: `minimal-ui`,
-      icon: `src/images/logo.png`
+      icon: `src/assets/logo.png`
     }
   },
   `gatsby-plugin-offline`,
+  {
+    resolve: `gatsby-plugin-mdx`,
+    options: {
+      gatsbyRemarkPlugins: [
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 1200
+          }
+        }
+      ]
+    }
+  },
   {
     resolve: `gatsby-plugin-postcss`,
     options: {

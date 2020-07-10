@@ -1,39 +1,49 @@
 import React from "react"
-
-import avatar from "../images/avatar.jpg"
-import resume from "../images/resume.pdf"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
 
-const IndexPage = ({ location }) => (
-  <Layout location={location}>
-    <SEO title="Home" />
-    <div className="container mx-auto px-4 md:px-8 my-16 md:my-24">
-      <div className="flex flex-col md:flex-row mx-4">
-        <div className="w-full flex justify-center my-4">
-          <img className="rounded" src={avatar} alt="avatar" />
+import resume from "../assets/resume.pdf"
+
+export default ({ data, location }) => {
+  const siteData = data.site.siteMetadata
+
+  return (
+    <Layout
+      seo={{
+        title: "Home"
+      }}
+      location={location}
+    >
+      <section className="container px-6 lg:px-24 min-h-screen flex flex-col justify-center items-start mx-auto">
+        <h1 className="font-mono text-lg lg:text-xl">Hi, my name is</h1>
+        <h2 className="text-5xl lg:text-6xl text-primary m-0">
+          {siteData.name}
+        </h2>
+        <h3 className="text-4xl lg:text-5xl mt-0">{siteData.description}</h3>
+        <div className="lg:w-2/3 mt-6">
+          <p>{siteData.subDescription}</p>
         </div>
-        <div className="w-full flex-col justify-center my-4 my-auto">
-          <p className="text-xl">Hi, my name is</p>
-          <h1 className="text-5xl md:text-6xl text-color-default">
-            Sanjith PK
-          </h1>
-          <h5 className="text-lg md:text-xl mb-0 text-color-3">
-            Web Developer with a passion for Technology and Innovation
-          </h5>
-          <h5 className="text-lg md:text-xl mt-0 text-color-3">
-            Always up for a Challenge
-          </h5>
+        <div className="w-full mt-12 lg:mb-12">
           <button className="btn btn-primary">
             <a href={resume} download="Resume.pdf">
               Resume
             </a>
           </button>
         </div>
-      </div>
-    </div>
-  </Layout>
-)
+      </section>
+    </Layout>
+  )
+}
 
-export default IndexPage
+export const querry = graphql`
+  query AboutQuery {
+    site: site {
+      siteMetadata {
+        name
+        description
+        subDescription
+      }
+    }
+  }
+`

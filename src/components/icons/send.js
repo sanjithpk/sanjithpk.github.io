@@ -1,6 +1,6 @@
 import React from "react"
 
-const MenuIcon = () => (
+const SendIcon = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={24}
@@ -8,15 +8,14 @@ const MenuIcon = () => (
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
-    strokeWidth={4}
+    strokeWidth={2}
     strokeLinecap="round"
     strokeLinejoin="round"
-    className="feather feather-menu"
+    className="feather feather-send"
   >
-    <line x1={3} y1={7} x2={24} y2={7} />
-    <line x1={3} y1={14} x2={18} y2={14} />
-    <line x1={3} y1={21} x2={14} y2={21} />
+    <line x1={22} y1={2} x2={11} y2={13} />
+    <polygon points="22 2 15 22 11 13 2 9 22 2" />
   </svg>
 )
 
-export default MenuIcon
+export default SendIcon

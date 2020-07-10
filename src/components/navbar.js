@@ -112,7 +112,7 @@ const Navbar = ({
         <div className="hidden lg:block">
           <List
             name="navbar"
-            className="nav-links flex"
+            className="nav-links flex animated-link-parent"
             current={currentLocation}
             currentTheme={currentTheme}
             switchTheme={switchTheme}

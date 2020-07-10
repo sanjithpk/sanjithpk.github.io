@@ -1,15 +1,18 @@
 import React, { useState, useEffect } from "react"
+import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+
+import "../style/index.css"
 
 import SunIcon from "./icons/sun"
 import MoonIcon from "./icons/moon"
 
-import "../style/index.css"
-
 import Navbar from "./navbar"
 import Footer from "./footer"
 
-export default ({ children, front, navPlaceholder = true, location }) => {
+import SEO from "../components/seo"
+
+export default ({ children, seo, front, navPlaceholder = true, location }) => {
   const query = useStaticQuery(graphql`
     query ThemeQuery {
       site {
@@ -36,6 +39,7 @@ export default ({ children, front, navPlaceholder = true, location }) => {
   ]
 
   const isDarkTheme = query.site.siteMetadata.darkmode
+
   const [theme, changeTheme] = useState(isDarkTheme ? 1 : 0)
 
   useEffect(() => {
@@ -53,6 +57,8 @@ export default ({ children, front, navPlaceholder = true, location }) => {
 
   return (
     <React.Fragment>
+      <Head data={query} />
+      <SEO {...seo} />
       <div className={`wrapper ${themes[theme].name}`}>
         <div className="text-color-default bg-bg">
           <Navbar
@@ -69,5 +75,13 @@ export default ({ children, front, navPlaceholder = true, location }) => {
         </div>
       </div>
     </React.Fragment>
+  )
+}
+
+const Head = ({ data }) => {
+  return (
+    <Helmet>
+      <link rel="icon" href={data.site.siteMetadata.icon} type="image/png" />
+    </Helmet>
   )
 }

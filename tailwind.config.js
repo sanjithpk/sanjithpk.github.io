@@ -1,3 +1,4 @@
+const defaultTheme = require("tailwindcss/defaultTheme")
 const plugin = require("tailwindcss/plugin")
 const _ = require("lodash")
 
@@ -21,12 +22,15 @@ module.exports = {
       primary: [theme("colors.primary"), theme("colors.secondary")]
     }),
     themes: {
+      fontFamily: {
+        sans: ["IBM Plex Sans", ...defaultTheme.fontFamily.sans]
+      },
       dark: {
         bg: "#111",
         bgalt: "#000",
         "color-default": "#eee",
         "color-1": "#c35fde",
-        "color-2": "#adbfef",
+        "color-2": "#0055aa",
         border: "#718096",
         primary: "#f55555",
         medium: "#222"
@@ -37,7 +41,7 @@ module.exports = {
       bgalt: "#f5f5f5",
       "color-default": "#333",
       "color-1": "#8e24aa",
-      "color-2": "#05a",
+      "color-2": "#673ab7",
       "color-3": "#aeb4c5",
       primary: "#f55555",
       secondary: "#6888df",
