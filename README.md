@@ -1,18 +1,33 @@
-<div align="center">
-  <img alt="Logo" src="https://raw.githubusercontent.com/sanjithpk/sanjithpk.github.io/master/src/assets/logo.png" width="100" />
-</div>
-<h1 align="center">
-  sanjith.me v2
-</h1>
+<img src="src" alt="hero image">
+
+I like experimenting with new technologies, building small projects, and occassionally joining hackathons. ✨
+
+Here's a list of things I currently keep myself busy with:
+
+- 🚀 Working on Fullstack Web Projects using React and Node.
+- 🛠 Getting myself into JAMStack. Trying out [Gatsby](https://gatsbyjs.org) in my spare time.
+
+<details>
+  <summary>Some other facts about me</summary>
+
+![My github stats](https://github-readme-stats.vercel.app/api?username=sanjithpk&show_icons=true)
+
+</details>
+
+<hr>
 <p align="center">
-  The second iteration of <a href="https://sanjith.me" target="_blank">sanjith.me</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+  <i>Let's connect and chat! Open to anything under the sun.</i>
+
+  <p align="center">
+    <a href="https://twitter.com/sanjithpk" alt="Twitter"><img src="src"></a>
+    <a href="https://linkedin.com/in/sanjithpk" alt="Twitter"><img src="src"></a>
+    <a href="mailto:sanjithpk07@gmail.com" alt="Twitter"><img src="src"></a>
+    <a href="https://sanjth.me" alt="Twitter"><img src="src"></a>
+  </p>
+
+  <p align="center">
+    <img align="center" src="https://visitor-badge.glitch.me/badge?page_id=sanjithpk.visitor-badge">
+  </p>
 </p>
-<p align="center">
-  Previous iterations:
-  <a href="https://github.com/sanjithpk/sanjithpk.github.io/tree/v1" target="_blank">v1</a>
-</p>
-<p align="center">
-  <a href="https://app.netlify.com/sites/sanjith/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/2924992d-e674-493f-92cb-bdda1f44a64e/deploy-status" alt="Netlify Status" />
-  </a>
-</p>
+
+<img src="src" alt="footer image">
