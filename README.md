@@ -1,4 +1,4 @@
-<img src="src" alt="hero image">
+<img src="https://raw.githubusercontent.com/sanjithpk/sanjithpk/master/readme/hero.svg" alt="hero image">
 
 I like experimenting with new technologies, building small projects, and occassionally joining hackathons. ✨
 
@@ -19,10 +19,10 @@ Here's a list of things I currently keep myself busy with:
   <i>Let's connect and chat! Open to anything under the sun.</i>
 
   <p align="center">
-    <a href="https://twitter.com/sanjithpk" alt="Twitter"><img src="src"></a>
-    <a href="https://linkedin.com/in/sanjithpk" alt="Twitter"><img src="src"></a>
-    <a href="mailto:sanjithpk07@gmail.com" alt="Twitter"><img src="src"></a>
-    <a href="https://sanjth.me" alt="Twitter"><img src="src"></a>
+    <a href="https://twitter.com/sanjithpk" alt="Icon"><img src="https://raw.githubusercontent.com/sanjithpk/sanjithpk/master/readme/twitter.svg"></a>
+    <a href="https://linkedin.com/in/sanjithpk" alt="Icon"><img src="https://raw.githubusercontent.com/sanjithpk/sanjithpk/master/readme/linkedin.svg"></a>
+    <a href="mailto:sanjithpk07@gmail.com" alt="Icon"><img src="https://raw.githubusercontent.com/sanjithpk/sanjithpk/master/readme/mail.svg"></a>
+    <a href="https://sanjth.me" alt="Icon"><img src="https://raw.githubusercontent.com/sanjithpk/sanjithpk/master/readme/external-link.svg"></a>
   </p>
 
   <p align="center">
@@ -30,4 +30,4 @@ Here's a list of things I currently keep myself busy with:
   </p>
 </p>
 
-<img src="src" alt="footer image">
+<img src="https://raw.githubusercontent.com/sanjithpk/sanjithpk/master/readme/footer.svg" alt="footer image">
