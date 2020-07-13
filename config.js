@@ -12,6 +12,13 @@ module.exports = {
   darkmode: true,
   switchTheme: true,
   blogItemsPerPage: 10,
+  about: {
+    intro: `Hello, I am Sanjith.`,
+    para1: `I have always enjoyed playing games, constantly thinking of theories, and solving difficult challenges. One day, I decided to give programming a try and discovered that web development was my preferred career over the various others in the field.`,
+    para2: `Being a developer is much more than just writing code. Communication skills, a clear mindset, result focused systems, and the ability to set realistic steps to achieve the future result is crucial to a developer's worth.`,
+    techLeft: ["JavaScript (ES6)", "React", "Node"],
+    techRight: ["Gatsby", "Next", "SQL"]
+  },
   socialMedia: [
     {
       name: "GitHub",

@@ -5,7 +5,7 @@ import resume from "../assets/resume.pdf"
 
 export default () => {
   const querry = useStaticQuery(graphql`
-    query AboutQuery {
+    query HeroQuery {
       site: site {
         siteMetadata {
           name

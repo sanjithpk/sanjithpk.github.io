@@ -40,6 +40,27 @@ const plugins = [
       icon: `src/assets/logo.png`
     }
   },
+  {
+    resolve: `gatsby-plugin-mdx`,
+    options: {
+      gatsbyRemarkPlugins: [
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            maxWidth: 1200
+          }
+        }
+      ],
+      plugins: [
+        {
+          resolve: `gatsby-remark-images`,
+          options: {
+            backgroundColor: "transparent"
+          }
+        }
+      ]
+    }
+  },
   `gatsby-plugin-offline`,
   {
     resolve: `gatsby-plugin-mdx`,
