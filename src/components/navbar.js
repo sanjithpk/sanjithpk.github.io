@@ -59,6 +59,7 @@ const Navbar = ({
       >
         <button
           className="absolute text-primary outline-0 lg:hidden"
+          aria-label="menu"
           style={{
             transform: "translateY(-50%)",
             top: "50%",

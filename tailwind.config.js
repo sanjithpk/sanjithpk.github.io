@@ -26,10 +26,10 @@ module.exports = {
         bg: "#111",
         bgalt: "#000",
         "color-default": "#eee",
-        "color-1": "#c35fde",
-        "color-2": "#0055aa",
+        "color-1": "#b83b5e",
+        "color-2": "#005ebf",
         border: "#718096",
-        primary: "#f55555",
+        primary: "#c70039",
         medium: "#222"
       }
     },
@@ -40,7 +40,7 @@ module.exports = {
       "color-1": "#8e24aa",
       "color-2": "#673ab7",
       "color-3": "#aeb4c5",
-      primary: "#f55555",
+      primary: "#c70039",
       secondary: "#6888df",
       link: "#0a71c5",
       medium: "#cfd8dc",
