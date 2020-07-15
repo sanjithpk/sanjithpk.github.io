@@ -21,7 +21,7 @@ module.exports = {
   },
   socialMedia: [
     {
-      name: "GitHub",
+      name: "Github",
       url: "https://github.com/sanjithpk"
     },
     {

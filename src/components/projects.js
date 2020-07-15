@@ -3,8 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
-import GitHubIcon from "./icons/github"
-import ExternalIcon from "./icons/external"
+import { Github, External } from "./icons/social"
 
 export default () => {
   const query = useStaticQuery(graphql`
@@ -106,10 +105,10 @@ const Project = ({ data }) => {
 
         <div className="flex mt-2 px-4">
           <a className="p-2" href={projectData.github}>
-            <GitHubIcon />
+            <Github />
           </a>
           <a className="p-2" href={projectData.external}>
-            <ExternalIcon />
+            <External />
           </a>
         </div>
       </div>

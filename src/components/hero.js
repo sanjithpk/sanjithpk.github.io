@@ -52,7 +52,7 @@ export default () => {
         right="40px"
         background="bg-donut-purple"
       />
-      <div className="container px-6 lg:px-24 mt-20 mb-20 mx-auto">
+      <div className="container px-6 lg:px-24 py-20 mx-auto">
         <h1 className="font-mono text-lg lg:text-xl">Hi, my name is</h1>
         <h2 className="text-5xl lg:text-6xl text-primary m-0">
           {siteData.name}
