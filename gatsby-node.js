@@ -43,6 +43,13 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+      projects: allMdx(filter: { fields: { sourceName: { eq: "projects" } } }) {
+        edges {
+          node {
+            id
+          }
+        }
+      }
       limitPost: site {
         siteMetadata {
           blogItemsPerPage
@@ -52,6 +59,7 @@ exports.createPages = async ({ graphql, actions }) => {
   `).then(result => {
     result.data.all.edges.forEach(({ node }) => {
       let template = node.fields.sourceName
+      if (template === "projects") return
       createPage({
         path: node.fields.slug,
         component: path.resolve("./src/templates/" + template + ".js"),

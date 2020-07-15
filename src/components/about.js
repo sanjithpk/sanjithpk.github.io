@@ -23,7 +23,7 @@ export default () => {
   const aboutData = querry.site.siteMetadata.about
 
   return (
-    <React.Fragment>
+    <section className="relative mb-10">
       <div className="container mx-auto px-0">
         <div className="pt-10 pb-10 text-center">
           <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
@@ -31,9 +31,13 @@ export default () => {
           </h2>
         </div>
         <div className="flex flex-col lg:flex-row-reverse px-4 xl:mx-12 items-center">
-          <img className="rounded" src={avatar} alt="avatar" />
+          <img
+            className="rounded shadow-md hover:shadow-lg"
+            src={avatar}
+            alt="avatar"
+          />
           <div className="p-6 xl:mx-24">
-            <p className="">{aboutData.intro}</p>
+            <p>{aboutData.intro}</p>
             <p className="mt-2">{aboutData.para1}</p>
             <p className="mt-2">{aboutData.para2}</p>
             <p className="mt-2">
@@ -43,7 +47,7 @@ export default () => {
               <ul>
                 {aboutData.techLeft.map((e, i) => {
                   return (
-                    <li className="list-disc" id={i}>
+                    <li className="list-disc" key={i}>
                       {e}
                     </li>
                   )
@@ -52,7 +56,7 @@ export default () => {
               <ul className="ml-12">
                 {aboutData.techRight.map((e, i) => {
                   return (
-                    <li className="list-disc" id={i}>
+                    <li className="list-disc" key={i}>
                       {e}
                     </li>
                   )
@@ -62,6 +66,6 @@ export default () => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </section>
   )
 }

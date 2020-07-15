@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import resume from "../assets/resume.pdf"
+import { Circle, Donut } from "./shapes"
 
 export default () => {
   const querry = useStaticQuery(graphql`
@@ -19,33 +20,46 @@ export default () => {
   const siteData = querry.site.siteMetadata
 
   return (
-    <React.Fragment>
-      <div
-        className="hidden xl:block absolute rounded-full bg-gradient-1"
-        style={{ height: 180, width: 180, top: 210, left: -90 }}
+    <section>
+      <Circle
+        size="180px"
+        top="210px"
+        left="-90px"
+        background="bg-gradient-yellow"
       />
-      <div
-        className="hidden xl:block absolute rounded-full bg-gradient-2"
-        style={{ height: 35, width: 35, top: 150, left: 25 }}
+      <Circle
+        size="35px"
+        top="150px"
+        left="25px"
+        background="bg-gradient-blue"
       />
-      <div
-        className="hidden xl:block absolute rounded-full bg-gradient-3"
-        style={{ height: 190, width: 190, bottom: 80, right: 120 }}
+      <Circle
+        size="190px"
+        top="460px"
+        right="120px"
+        background="bg-gradient-pink"
+        animation="up 6s ease-in-out infinite alternate"
       />
-      <div
-        className="hidden xl:block absolute rounded-full bg-gradient-4"
-        style={{ height: 90, width: 90, bottom: 80, left: 20 }}
+      <Circle
+        size="90px"
+        top="580px"
+        left="20px"
+        background="bg-gradient-green"
       />
-      <div
-        className="hidden xl:block absolute rounded-full bg-donut-1"
-        style={{ height: 170, width: 170, top: 120, right: 40 }}
+      <Donut
+        size="170px"
+        top="120px"
+        right="40px"
+        background="bg-donut-purple"
       />
-      <section className="container px-6 lg:px-24 py-20 lg:py-12 flex flex-col justify-start items-start mx-auto">
+      <div className="container px-6 lg:px-24 mt-20 mb-20 mx-auto">
         <h1 className="font-mono text-lg lg:text-xl">Hi, my name is</h1>
         <h2 className="text-5xl lg:text-6xl text-primary m-0">
           {siteData.name}
         </h2>
-        <h3 className="text-4xl lg:text-5xl mt-0">{siteData.description}</h3>
+        <h3 className="text-4xl lg:text-5xl mt-0 leading-tight">
+          {siteData.description}
+        </h3>
         <div className="lg:w-2/3 mt-6">
           <p>{siteData.subDescription}</p>
         </div>
@@ -56,7 +70,7 @@ export default () => {
             </a>
           </button>
         </div>
-      </section>
-    </React.Fragment>
+      </div>
+    </section>
   )
 }

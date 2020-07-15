@@ -19,7 +19,7 @@ export const ItemBlog = ({ data }) => {
           onFocus={() => changeFocused(true)}
           onBlur={() => changeFocused(false)}
         >
-          <div className="image lg:flex lg:py-6">
+          <div className="lg:ml-4 image lg:flex lg:py-6">
             <Img
               fluid={data.frontmatter.banner.childImageSharp.fluid}
               alt={data.frontmatter.title}
