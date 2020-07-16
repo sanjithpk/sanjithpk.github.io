@@ -21,6 +21,26 @@
   background: #888;
 }
 
+.theme-light {
+  --bg: #f5f5f5;
+  --bgalt: #eee;
+  --color-default: #111;
+  --color-1: #8e24aa;
+  --color-2: #673ab7;
+  --color-primary: #f55555;
+  --medium: #cfd8dc;
+}
+
+.theme-dark {
+  --bg: #111;
+  --bgalt: #1a1a1a;
+  --color-default: #eee;
+  --color-1: #b83b5e;
+  --color-2: #005ebf;
+  --color-primary: #c70039;
+  --medium: #222;
+}
+
 p {
   line-height: 165%;
 }
@@ -275,14 +295,6 @@ h6 {
 
 .input.focused {
   @apply px-4;
-}
-
-.theme-dark .input.focused {
-  background: theme("themes.dark.medium");
-}
-
-.theme-dark .blog-item .focused {
-  background: theme("themes.dark.medium");
 }
 
 .spin {

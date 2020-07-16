@@ -69,7 +69,7 @@ const Project = ({ data }) => {
       )}`}
     >
       <div className="lg:w-1/2 px-2">
-        <a aria-label="External Link" href={projectData.external}>
+        <a title="External Link" href={projectData.external}>
           <Img
             className="rounded shadow-md lg:opacity-50 lg:hover:opacity-100"
             fluid={projectData.cover.childImageSharp.fluid}
@@ -104,10 +104,10 @@ const Project = ({ data }) => {
         </ul>
 
         <div className="flex mt-2 px-4">
-          <a className="p-2" aria-label="Github" href={projectData.github}>
+          <a className="p-2" title="Github" href={projectData.github}>
             <Github />
           </a>
-          <a className="p-2" aria-label="External" href={projectData.external}>
+          <a className="p-2" title="External" href={projectData.external}>
             <External />
           </a>
         </div>

@@ -21,31 +21,18 @@ module.exports = {
     gradients: theme => ({
       primary: [theme("colors.primary"), theme("colors.secondary")]
     }),
-    themes: {
-      dark: {
-        bg: "#111",
-        bgalt: "#000",
-        "color-default": "#eee",
-        "color-1": "#b83b5e",
-        "color-2": "#005ebf",
-        border: "#718096",
-        primary: "#c70039",
-        medium: "#222"
-      }
-    },
+    themes: {},
     colors: {
-      bg: "#fff",
-      bgalt: "#f5f5f5",
-      "color-default": "#111",
-      "color-1": "#8e24aa",
-      "color-2": "#673ab7",
+      bg: "var(--bg)",
+      bgalt: "var(--bgalt)",
+      "color-default": "var(--color-default)",
+      "color-1": "var(--color-1)",
+      "color-2": "var(--color-2)",
       "color-3": "#aeb4c5",
-      primary: "#f55555",
+      primary: "var(--color-primary)",
       secondary: "#6888df",
       link: "#0a71c5",
-      medium: "#cfd8dc",
-      white: "#fff",
-      black: "#000",
+      medium: "var(--medium)",
       transparent: "rgba(0,0,0,0)",
       error: "#ef5350",
       success: "#8bc34a"

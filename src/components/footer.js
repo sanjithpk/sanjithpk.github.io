@@ -28,7 +28,7 @@ export default function() {
         </div>
         <div className="flex justify-center">
           {siteData.socialMedia.map((e, i) => (
-            <a className="p-2" href={e.url} aria-label={e.name} key={i}>
+            <a className="p-2" href={e.url} title={e.name} key={i}>
               <Social name={e.name} />
             </a>
           ))}

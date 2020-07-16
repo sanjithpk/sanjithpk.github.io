@@ -59,7 +59,7 @@ const Item = ({ type, currentPage, title, page, icon }) => {
         to={to}
         title={_title}
         className={`rounded-full bg-bgalt flex items-center justify-center w-12 text-center h-12 m-3 transition-all duration-300 hover:shadow-2xl focus:shadow-2xl ${
-          active ? "bg-gradient-primary text-white shadow-2xl" : ""
+          active ? "bg-gradient-primary text-color-default shadow-2xl" : ""
         }`}
       >
         <span>{icon || page}</span>
