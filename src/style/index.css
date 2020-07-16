@@ -63,7 +63,7 @@ p {
 }
 
 .title h1 {
-  @apply text-color-1 font-black;
+  @apply font-black;
 }
 
 .supports-blend .title h1 {
@@ -194,7 +194,7 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-black text-color-2 my-4;
+  @apply font-black my-4;
 }
 
 .post-content h1 {
