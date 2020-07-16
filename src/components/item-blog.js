@@ -26,9 +26,9 @@ export const ItemBlog = ({ data }) => {
               className="w-full lg:w-1/2"
             />
             <div className="p-4 py-3">
-              <h5 className="text-color-2 font-black text-3xl pt-1">
+              <h1 className="text-color-2 font-black text-3xl pt-1">
                 {data.frontmatter.title}
-              </h5>
+              </h1>
               <div className="flex items-center text-secondary">
                 <CalendarIcon className="stroke-current" />
                 <p className="pl-2 text-color-default font-sans">

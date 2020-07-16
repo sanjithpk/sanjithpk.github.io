@@ -30,12 +30,12 @@ export default ({ data, location }) => {
 
 const Blog = ({ children }) => {
   return (
-    <div className="container mx-auto px-0">
+    <section className="container mx-auto px-0">
       <div className="pt-10 pb-10 text-center">
         <h2 className="text-color-1 font-black text-5xl lg:text-6xl">Blog</h2>
       </div>
       <div className="flex flex-wrap">{children}</div>
-    </div>
+    </section>
   )
 }
 

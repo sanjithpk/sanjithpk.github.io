@@ -52,7 +52,7 @@ export default () => {
         right="40px"
         background="bg-donut-purple"
       />
-      <div className="h-screen container flex flex-col justify-center items-start px-6 lg:px-24 mx-auto">
+      <div className="container py-20 px-6 lg:px-24 mx-auto">
         <h1 className="font-mono text-lg lg:text-xl">Hi, my name is</h1>
         <h2 className="text-5xl lg:text-6xl text-primary m-0">
           {siteData.name}
