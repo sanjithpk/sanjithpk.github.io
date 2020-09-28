@@ -22,7 +22,7 @@ Here's a list of things I currently keep myself busy with:
     <a href="https://twitter.com/sanjithpk" alt="Icon"><img src="https://raw.githubusercontent.com/sanjithpk/sanjithpk/master/readme/twitter.svg"></a>
     <a href="https://linkedin.com/in/sanjithpk" alt="Icon"><img src="https://raw.githubusercontent.com/sanjithpk/sanjithpk/master/readme/linkedin.svg"></a>
     <a href="mailto:sanjithpk07@gmail.com" alt="Icon"><img src="https://raw.githubusercontent.com/sanjithpk/sanjithpk/master/readme/mail.svg"></a>
-    <a href="https://sanjth.me" alt="Icon"><img src="https://raw.githubusercontent.com/sanjithpk/sanjithpk/master/readme/external-link.svg"></a>
+    <a href="https://sanjith.me" alt="Icon"><img src="https://raw.githubusercontent.com/sanjithpk/sanjithpk/master/readme/external-link.svg"></a>
   </p>
 
   <p align="center">
